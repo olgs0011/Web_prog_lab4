@@ -1501,6 +1501,101 @@ section.shag_in_future {
   text-align: left;
 }
 
+.shag_in_future_header .contaktiki a {
+  font-size: 12px;
+  color: #adaaaa;
+  font-family: "Manrope", sans-serif;
+  text-align: left;
+}
+
+@media screen and (min-width: 2560px) {
+  .blog .container_for_block {
+    display: flex !important;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .blog .container_for_block .large_block {
+    flex: 0 0 60%;
+    max-width: 60%;
+  }
+
+  .blog .small_blocks {
+    flex: 0 0 35%;
+    max-width: 35%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
+
+/* 1280px */
+@media screen and (min-width: 1280px) and (max-width: 1439px) {
+  .blog .container_for_block {
+    display: flex !important;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2rem;
+    width: 100%;
+  }
+
+  .blog .container_for_block .large_block {
+    flex: 1; /* занимает всё оставшееся место */
+    max-width: calc(100% - 24rem); /* вычитаем примерную ширину колонки справа */
+  }
+
+    .blog .container_for_block .large_block .large_img,
+  .blog .container_for_block .large_block .blok_large {
+    width: 100% !important;
+  }
+}
+
+/* 1440px */
+@media screen and (min-width: 1440px) and (max-width: 1919px) {
+  .blog .container_for_block {
+    display: flex !important;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2.5rem;
+    width: 100%;
+  }
+
+  .blog .container_for_block .large_block {
+    flex: 1;
+    max-width: calc(100% - 20rem);
+  }
+
+  
+  .blog .container_for_block .large_block .large_img,
+  .blog .container_for_block .large_block .blok_large {
+    width: 100% !important;
+  }
+}
+
+/* 1920px */
+@media screen and (min-width: 1920px) and (max-width: 2559px) {
+  .blog .container_for_block {
+    display: flex !important;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 3rem;
+    width: 100%;
+  }
+
+  .blog .container_for_block .large_block {
+    flex: 1;
+    max-width: calc(100% - 30rem);
+  }
+
+  .blog .container_for_block .large_block .large_img,
+  .blog .container_for_block .large_block .blok_large {
+    width: 100% !important;
+  }
+}
+
+
 .shag_in_future .contakt_info .contaktiki .item__link {
   margin-top: 105px;
   color: #adaaaa;
